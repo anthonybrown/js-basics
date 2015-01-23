@@ -10,6 +10,9 @@ html {
   min-height: 100%;
 }
 
+*, *:before, *:after{
+  box-sizing: inherit;
+}
 
 body {
   position: relative;
@@ -19,6 +22,7 @@ body {
   min-height: 100%;
   font: normal normal 20px/1.75 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #555;
+  word-wrap: break-word;
 }
 
 /* HTML5 display definitions
@@ -154,12 +158,12 @@ samp {
 }
 
 code {
-  margin: 0.7em 0;
-  padding:0.1em 0.5em;
+  margin: 0.7em 0.1em;
+  padding:0.1em 0.3em;
   background-color: #f5f5f5;
   color: #444;/*#f79494*/
-  border-radius: 5px;
-  border: 1px outset #777;
+  border-radius: 3px;
+  border: 1px outset #ccc;
 }
 
 /* Forms
